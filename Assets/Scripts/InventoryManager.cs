@@ -30,9 +30,9 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]
     private ItemDisplay[] displays;
     [SerializeField]
-    private Sprite defaultSprite;
+    private RectTransform inventoryArea;
     [SerializeField]
-    private Sprite selectedSprite;
+    private Toggle inventoryButton;
     [SerializeField]
     private GameObject itemNamePanel;
 
@@ -81,6 +81,12 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    public void UpdateInventoryArea()
+    {
+        Vector3 position = inventoryButton.isOn ? new Vector3(0, 0, 0) : new Vector3(0, 140, 0);
+        inventoryArea.anchoredPosition = position;
+    }
+
     public void Add(Item item)
     {
         items.Add(item);
@@ -91,15 +97,5 @@ public class InventoryManager : MonoBehaviour
     {
         items.Remove(item);
         RefreshToggleGroup();
-    }
-
-    public Sprite GetDefaultSprite()
-    {
-        return defaultSprite;
-    }
-
-    public Sprite GetSelectedSprite()
-    {
-        return selectedSprite;
     }
 }
