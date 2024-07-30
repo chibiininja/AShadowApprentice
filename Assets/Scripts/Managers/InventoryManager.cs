@@ -35,6 +35,8 @@ public class InventoryManager : MonoBehaviour
     private Toggle inventoryButton;
     [SerializeField]
     private GameObject itemNamePanel;
+    [SerializeField]
+    private ToggleGroup inventoryGroup;
 
     void Start()
     {
@@ -71,10 +73,12 @@ public class InventoryManager : MonoBehaviour
     public void SetItemName()
     {
         itemNamePanel.SetActive(false);
-        for(int i = 0; i < displays.Length; i++) {
+        TextMeshProUGUI itemText = itemNamePanel.GetComponentInChildren<TextMeshProUGUI>();
+        itemText.SetText("");
+        for (int i = 0; i < displays.Length; i++) {
             if (displays[i].toggle.isOn)
             {
-                itemNamePanel.GetComponentInChildren<TextMeshProUGUI>().SetText(items[i].itemName);
+                itemText.SetText(items[i].itemName);
                 itemNamePanel.SetActive(true);
                 break;
             }
@@ -97,5 +101,19 @@ public class InventoryManager : MonoBehaviour
     {
         items.Remove(item);
         RefreshToggleGroup();
+    }
+
+    public Item CurrentSelectedItem()
+    {
+        if (!inventoryGroup.AnyTogglesOn()) 
+            return null;
+        
+        for (int i = 0;i < displays.Length; i++) {
+            if (displays[i].toggle.isOn)
+            {
+                return items[i];
+            }
+        }
+        return null;
     }
 }
