@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Flask of Fire
   icon: {fileID: 0}
+  addNoise: clink
+  removeNoise: fire

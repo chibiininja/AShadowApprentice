@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Vial of Mercury
   icon: {fileID: 0}
+  addNoise: clink
+  removeNoise: pour

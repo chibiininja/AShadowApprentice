@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Tea Leaves
   icon: {fileID: 0}
+  addNoise: 
+  removeNoise: mortar and pestle

@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Flask of Water
   icon: {fileID: 0}
+  addNoise: clink
+  removeNoise: pour

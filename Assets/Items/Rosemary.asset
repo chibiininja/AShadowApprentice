@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Rosemary
   icon: {fileID: 0}
+  addNoise: 
+  removeNoise: rosemary

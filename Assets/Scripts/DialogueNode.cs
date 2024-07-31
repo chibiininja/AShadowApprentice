@@ -6,6 +6,13 @@ using System;
 
 public class DialogueNode : MonoBehaviour
 {
+    [Serializable]
+    public class AudioPair
+    {
+        public string name;
+        public float delay;
+    }
+
     [SerializeField]
     private string speaker;
     [SerializeField]
@@ -17,7 +24,7 @@ public class DialogueNode : MonoBehaviour
     [SerializeField]
     private DialogueNode destination;
     [SerializeField]
-    private List<Tuple<string, float>> audioList;
+    private List<AudioPair> audioList;
 
     void OnEnable()
     {
@@ -44,7 +51,7 @@ public class DialogueNode : MonoBehaviour
     {
         foreach (var audioObject in audioList)
         {
-            AudioManager.instance.PlayAudio(audioObject.Item1, audioObject.Item2);
+            AudioManager.instance.PlayAudio(audioObject.name, audioObject.delay);
         }
     }
 

@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Vial of Honey
   icon: {fileID: 0}
+  addNoise: clink
+  removeNoise: pour

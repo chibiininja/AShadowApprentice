@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Dove Feathers
   icon: {fileID: 0}
+  addNoise: doves
+  removeNoise: rosemary

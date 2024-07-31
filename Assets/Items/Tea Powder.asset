@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Tea Powder
   icon: {fileID: 0}
+  addNoise: 
+  removeNoise: pickup

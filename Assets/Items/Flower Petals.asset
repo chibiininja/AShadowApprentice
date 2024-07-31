@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Flower Petals
   icon: {fileID: 0}
+  addNoise: 
+  removeNoise: rosemary

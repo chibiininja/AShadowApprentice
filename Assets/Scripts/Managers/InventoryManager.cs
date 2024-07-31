@@ -93,12 +93,15 @@ public class InventoryManager : MonoBehaviour
 
     public void Add(Item item)
     {
+        AudioManager.instance.PlayAudio("pickup");
+        AudioManager.instance.PlayAudio(item.addNoise);
         items.Add(item);
         RefreshToggleGroup();
     }
 
     public void Remove(Item item)
     {
+        AudioManager.instance.PlayAudio(item.removeNoise);
         items.Remove(item);
         RefreshToggleGroup();
     }
