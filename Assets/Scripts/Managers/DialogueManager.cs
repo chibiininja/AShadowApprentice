@@ -40,6 +40,7 @@ public class DialogueManager : MonoBehaviour
     private TextMeshProUGUI textField;
 
     private DialogueNode currentDialogue;
+    private Color transparent = new Color(1f, 1f, 1f, 0f);
 
     public void StartDialogue(int index)
     {
@@ -77,15 +78,13 @@ public class DialogueManager : MonoBehaviour
 
     public void SetLeftCharacter(Sprite sprite)
     {
-        if (sprite == null)
-            return;
+        leftCharacter.color = sprite != null ? Color.white : transparent;
         leftCharacter.sprite = sprite;
     }
 
     public void SetRightCharacter(Sprite sprite)
     {
-        if (sprite == null)
-            return;
+        rightCharacter.color = sprite != null ? Color.white : transparent;
         rightCharacter.sprite = sprite;
     }
 
