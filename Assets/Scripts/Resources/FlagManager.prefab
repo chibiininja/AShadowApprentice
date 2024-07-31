@@ -44,3 +44,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd50d0c4a220d541bf23cca5be69375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inspectorFlags:
+  - flagName: teaFlagStart
+    value: 1
+  - flagName: ointmentFlagStart
+    value: 0
+  - flagName: automatonFlagStart
+    value: 0
+  - flagName: hammerFlagStart
+    value: 0
+  - flagName: pondFlagStart
+    value: 0
+  - flagName: loveFlagStart
+    value: 0
+  - flagName: teaFlagEnd
+    value: 0
+  - flagName: ointmentFlagEnd
+    value: 0
+  - flagName: automatonFlagEnd
+    value: 0
+  - flagName: hammerFlagEnd
+    value: 0
+  - flagName: pondFlagEnd
+    value: 0
+  - flagName: loveFlagEnd
+    value: 0

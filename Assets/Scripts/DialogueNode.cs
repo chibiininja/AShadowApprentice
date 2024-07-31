@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class DialogueNode : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class DialogueNode : MonoBehaviour
     private Sprite rightCharacter;
     [SerializeField]
     private DialogueNode destination;
+    [SerializeField]
+    private List<Tuple<string, float>> audioList;
 
     void OnEnable()
     {
@@ -22,6 +25,7 @@ public class DialogueNode : MonoBehaviour
         DialogueManager.instance.SetLeftCharacter(leftCharacter);
         DialogueManager.instance.SetRightCharacter(rightCharacter);
         StartCoroutine(TypeSentence(text));
+        PlayAudio();
     }
 
     IEnumerator TypeSentence (string text)
@@ -33,6 +37,14 @@ public class DialogueNode : MonoBehaviour
             builtString += letter;
             DialogueManager.instance.SetTextField(builtString);
             yield return null;
+        }
+    }
+
+    void PlayAudio()
+    {
+        foreach (var audioObject in audioList)
+        {
+            AudioManager.instance.PlayAudio(audioObject.Item1, audioObject.Item2);
         }
     }
 

@@ -56,4 +56,18 @@ public class AudioManager : MonoBehaviour
             audioDict.Add(audio.audioName, audio.audioObject);
         }
     }
+
+    public void PlayAudio(string name, float delay = 0f)
+    {
+        //If it doesn't exist, return
+        if (!audioDict.ContainsKey(name))
+            return;
+        StartCoroutine(AddAudio(name, delay));
+    }
+
+    IEnumerator AddAudio(string name, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Instantiate(audioDict[name]);
+    }
 }

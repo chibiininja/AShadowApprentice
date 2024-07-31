@@ -45,3 +45,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
+  displays:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  inventoryArea: {fileID: 0}
+  inventoryButton: {fileID: 0}
+  itemNamePanel: {fileID: 0}
+  inventoryGroup: {fileID: 0}

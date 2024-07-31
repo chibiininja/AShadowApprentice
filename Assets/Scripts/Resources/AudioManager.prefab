@@ -44,6 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abd56866affa0a4e8ee251432c4908d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inspectorAudio:
-  - audioName: 
-    audioObject: {fileID: 0}
+  inspectorAudio: []

@@ -44,3 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 419649794e33efb49beadfd634659bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue:
+  - {fileID: 0}
+  dialogueScreen: {fileID: 0}
+  gameplayScreen: {fileID: 0}
+  leftCharacter: {fileID: 0}
+  rightCharacter: {fileID: 0}
+  nameField: {fileID: 0}
+  textField: {fileID: 0}

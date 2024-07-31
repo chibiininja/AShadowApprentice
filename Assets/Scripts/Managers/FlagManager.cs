@@ -2,8 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 [Serializable]
 public class Flag
@@ -36,7 +34,7 @@ public class FlagManager : MonoBehaviour
     private List<Flag> inspectorFlags;
     private Dictionary<string,bool> flags = new Dictionary<string, bool>();
 
-    void Start()
+    void Awake()
     {
         if (_instance == null)
         {
@@ -57,5 +55,15 @@ public class FlagManager : MonoBehaviour
         {
             flags.Add(flag.flagName, flag.value);
         }
+    }
+
+    public void SetFlag(string name, bool value)
+    {
+        flags[name] = value;
+    }
+
+    public bool GetFlag(string name)
+    {
+        return flags[name];
     }
 }
