@@ -406,8 +406,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: a1bec5fe93863f548b609a458b685899, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4453,7 +4453,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is page 1
+  m_text: 'TEA
+
+    - Painting --> Lemon
+
+    - Bookshelf --> Water
+
+    - Tea Leaves
+    --> (Mortar and Pestle) --> Tea Powder
+
+
+    Ointment
+
+    - Honey ?
+
+    - Rosemary
+
+    -
+    Ice'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8613,7 +8630,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is page 2
+  m_text: 'Automaton
+
+    - Cog ?
+
+    - Clay
+
+    - Mercury
+
+
+    Hammer
+
+    -
+    Metal Core
+
+    - Empty Vial --> (Burner) --> Vial of Fire
+
+    - Blood'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11065,7 +11098,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is page 3
+  m_text: 'Pond Potion
+
+    - Wood
+
+    - Moss
+
+    - Click bottom-left of the window
+    10 times --> Worm
+
+
+    Love Potion
+
+    - Pearl
+
+    - Dove Feathers
+
+    -
+    Flower Petals'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15135,8 +15185,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e313b7c0e343f8045957fc0c3715c3af, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
