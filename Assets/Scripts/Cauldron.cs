@@ -32,6 +32,7 @@ public class Cauldron : MonoBehaviour
             counter = 0;
             currentItems.Clear();
             DialogueManager.instance.StartDialogue(1);
+            InventoryManager.instance.Add(ItemDictionary.instance.GetItem("Vial of Honey"));
             flagManager.SetFlag("ointmentFlagStart", true);
         }
         if (flagManager.GetFlag("ointmentFlagStart") && !flagManager.GetFlag("ointmentFlagEnd"))
@@ -48,6 +49,7 @@ public class Cauldron : MonoBehaviour
             counter = 0;
             currentItems.Clear();
             DialogueManager.instance.StartDialogue(2);
+            InventoryManager.instance.Add(ItemDictionary.instance.GetItem("Cog"));
             flagManager.SetFlag("automatonFlagStart", true);
         }
         if (flagManager.GetFlag("automatonFlagStart") && !flagManager.GetFlag("automatonFlagEnd"))
@@ -64,6 +66,7 @@ public class Cauldron : MonoBehaviour
             counter = 0;
             currentItems.Clear();
             DialogueManager.instance.StartDialogue(3);
+            InventoryManager.instance.Add(ItemDictionary.instance.GetItem("Pig's Blood"));
             flagManager.SetFlag("hammerFlagStart", true);
         }
         if (flagManager.GetFlag("hammerFlagStart") && !flagManager.GetFlag("hammerFlagEnd"))
@@ -80,6 +83,7 @@ public class Cauldron : MonoBehaviour
             counter = 0;
             currentItems.Clear();
             DialogueManager.instance.StartDialogue(4);
+            InventoryManager.instance.Add(ItemDictionary.instance.GetItem("Wood"));
             flagManager.SetFlag("pondFlagStart", true);
         }
         if (flagManager.GetFlag("pondFlagStart") && !flagManager.GetFlag("pondFlagEnd"))
@@ -96,6 +100,7 @@ public class Cauldron : MonoBehaviour
             counter = 0;
             currentItems.Clear();
             DialogueManager.instance.StartDialogue(5);
+            InventoryManager.instance.Add(ItemDictionary.instance.GetItem("Pearl"));
             flagManager.SetFlag("loveFlagStart", true);
         }
         if (flagManager.GetFlag("loveFlagStart") && !flagManager.GetFlag("loveFlagEnd"))

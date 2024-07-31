@@ -37,6 +37,7 @@ public class InventoryManager : MonoBehaviour
     private GameObject itemNamePanel;
     [SerializeField]
     private ToggleGroup inventoryGroup;
+    private List<Item> previousItems = new List<Item>();
 
     void Start()
     {
@@ -93,10 +94,15 @@ public class InventoryManager : MonoBehaviour
 
     public void Add(Item item)
     {
+        if (previousItems.Contains(item))
+        {
+            return;
+        }
         AudioManager.instance.PlayAudio("pickup");
         AudioManager.instance.PlayAudio(item.addNoise);
         items.Add(item);
         RefreshToggleGroup();
+        previousItems.Add(item);
     }
 
     public void Remove(Item item)
