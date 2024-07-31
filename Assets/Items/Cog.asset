@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Cog
   m_EditorClassIdentifier: 
   itemName: Cog
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: c0b6de7e2db5a90479c79927a3c0d7e9, type: 3}
   addNoise: 
   removeNoise: cog

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Vial of Honey
   m_EditorClassIdentifier: 
   itemName: Vial of Honey
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 36a21300b3f71474d90b6d4c229676ae, type: 3}
   addNoise: clink
   removeNoise: pour

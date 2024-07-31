@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Vial of Mercury
   m_EditorClassIdentifier: 
   itemName: Vial of Mercury
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 79a2582f7a9014740b3706f8843acdff, type: 3}
   addNoise: clink
   removeNoise: pour

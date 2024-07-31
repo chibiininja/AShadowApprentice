@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Metal Core
   m_EditorClassIdentifier: 
   itemName: Metal Core
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: ac2f202a942781040bc3caab541f7fea, type: 3}
   addNoise: 
   removeNoise: metal

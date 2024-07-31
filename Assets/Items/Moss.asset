@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Moss
   m_EditorClassIdentifier: 
   itemName: Moss
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 440dacd4e83e952429de326e0e0311bb, type: 3}
   addNoise: moss
   removeNoise: moss

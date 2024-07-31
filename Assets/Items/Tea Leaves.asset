@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Tea Leaves
   m_EditorClassIdentifier: 
   itemName: Tea Leaves
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 18538216142f29f429707ca637fb5165, type: 3}
   addNoise: 
   removeNoise: mortar and pestle

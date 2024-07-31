@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0365bfa24a80a5741820e5b25153117b, type: 3}
-  m_Name: Flask of Water
+  m_Name: Vial of Water
   m_EditorClassIdentifier: 
-  itemName: Flask of Water
-  icon: {fileID: 0}
+  itemName: Vial of Water
+  icon: {fileID: 21300000, guid: e23bc50a3b844d74a9a05eefd85e4bb2, type: 3}
   addNoise: clink
   removeNoise: pour

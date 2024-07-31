@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ice Cubes
   m_EditorClassIdentifier: 
   itemName: Ice Cubes
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 6ef6977e48c48354d8b0e95e79788455, type: 3}
   addNoise: 
   removeNoise: ice

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Pig's Blood
   m_EditorClassIdentifier: 
   itemName: Pig's Blood
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 8d911fdd93631ce468db8ea0d321af9c, type: 3}
   addNoise: 
   removeNoise: pour

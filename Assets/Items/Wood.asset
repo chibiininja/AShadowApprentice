@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Wood
   m_EditorClassIdentifier: 
   itemName: Wood
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 40439dd80dc53974f9e3341e7203f330, type: 3}
   addNoise: 
   removeNoise: wood

@@ -23,7 +23,7 @@ public class Cauldron : MonoBehaviour
         {
             acceptableItems.Add(ItemDictionary.instance.GetItem("Tea Powder"));
             acceptableItems.Add(ItemDictionary.instance.GetItem("Lemon"));
-            acceptableItems.Add(ItemDictionary.instance.GetItem("Flask of Water"));
+            acceptableItems.Add(ItemDictionary.instance.GetItem("Vial of Water"));
             flagManager.SetFlag("teaFlagEnd", true);
         }
         if (counter == 3 && currentItems.Contains(ItemDictionary.instance.GetItem("Tea Powder")))
@@ -70,7 +70,7 @@ public class Cauldron : MonoBehaviour
         {
             acceptableItems.Clear();
             acceptableItems.Add(ItemDictionary.instance.GetItem("Metal Core"));
-            acceptableItems.Add(ItemDictionary.instance.GetItem("Flask of Fire"));
+            acceptableItems.Add(ItemDictionary.instance.GetItem("Vial of Fire"));
             acceptableItems.Add(ItemDictionary.instance.GetItem("Pig's Blood"));
             flagManager.SetFlag("hammerFlagEnd", true);
         }
