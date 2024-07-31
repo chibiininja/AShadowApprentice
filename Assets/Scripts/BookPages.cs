@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BookPages : MonoBehaviour
 {
@@ -12,6 +13,13 @@ public class BookPages : MonoBehaviour
     private GameObject leftButton;
     [SerializeField]
     private GameObject rightButton;
+    [SerializeField]
+    private Image paperBackground;
+    [SerializeField]
+    private Sprite firstPaper;
+    [SerializeField]
+    private Sprite secondPaper;
+    private bool firstBackground = true;
 
     void Update()
     {
@@ -25,6 +33,8 @@ public class BookPages : MonoBehaviour
             pages[currentPage].SetActive(true);
             previousPage = currentPage;
         }
+
+        paperBackground.sprite = firstBackground ? firstPaper : secondPaper;
     }
 
     public void FlipRight()
@@ -47,5 +57,8 @@ public class BookPages : MonoBehaviour
             rightButton.SetActive(false);
         else 
             rightButton.SetActive(true);
+
+        firstBackground = !firstBackground;
+        AudioManager.instance.PlayAudio("pageflip");
     }
 }

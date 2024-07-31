@@ -17,6 +17,7 @@ public class AudioPlayer : MonoBehaviour
         {
             int index = UnityEngine.Random.Range(0, audioClips.Count);
             GetComponent<AudioSource>().clip = audioClips[index];
+            GetComponent<AudioSource>().Play();
             StartCoroutine("DestroySelf", GetComponent<AudioSource>().clip.length);
         }
     }
